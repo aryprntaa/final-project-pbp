@@ -9,6 +9,7 @@ $result = $conn->query("SELECT * FROM users");
 <tr>
     <th>ID</th>
     <th>Name</th>
+    <th>Age</th>
     <th>Email</th>
     <th>Password</th>
     <th>Gender</th>
@@ -19,6 +20,7 @@ $result = $conn->query("SELECT * FROM users");
 <tr>
     <td><?= $row['_id']; ?></td>
     <td><?= $row['name']; ?></td>
+    <td><?= $row['age']; ?></td>
     <td><?= $row['email']; ?></td>
     <td><?= $row['password']; ?></td>
     <td>
