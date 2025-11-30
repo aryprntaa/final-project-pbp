@@ -32,4 +32,5 @@ if (isset($_POST['submit'])) {
     <label for="perempuan">Perempuan</label><br>
     Age: <input type="number" name="age"><br>
     <button type="submit" name="submit">Save</button>
+    <button><a href="read.php">Kembali</a></button>
 </form>
