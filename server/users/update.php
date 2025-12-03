@@ -10,7 +10,7 @@ if (isset($_POST['update'])) {
     $password = $_POST['password'];
     
 
-    $conn->query("UPDATE users SET name='$name', email='$email', password='$password', age='$age', gender='$gender' WHERE _id=$id");
+    $conn->query("UPDATE users SET name='$name', email='$email', password='$password' WHERE _id=$id");
     header("Location: read.php");
 }
 ?>
