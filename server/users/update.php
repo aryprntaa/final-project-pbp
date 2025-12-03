@@ -8,8 +8,7 @@ if (isset($_POST['update'])) {
     $name  = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $age = $_POST['age'];
-    $gender = $_POST['gender'];
+    
 
     $conn->query("UPDATE users SET name='$name', email='$email', password='$password', age='$age', gender='$gender' WHERE _id=$id");
     header("Location: read.php");
@@ -21,4 +20,7 @@ if (isset($_POST['update'])) {
     Email: <input type="email" name="email" value="<?= $user['email']; ?>"><br>
     Password: <input type="text" name="password" value="<?= $user['password']; ?>"><br>
     
+    <br>
+    <button type="submit" name="update">Update</button>
+    <button><a href="read.php">Kembali</a></button>
 </form>

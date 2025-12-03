@@ -9,10 +9,8 @@ $result = $conn->query("SELECT * FROM users");
 <tr>
     <th>ID</th>
     <th>Name</th>
-    <th>Age</th>
     <th>Email</th>
     <th>Password</th>
-    <th>Gender</th>
     <th>Action</th>
 </tr>
 
@@ -20,18 +18,9 @@ $result = $conn->query("SELECT * FROM users");
 <tr>
     <td><?= $row['_id']; ?></td>
     <td><?= $row['name']; ?></td>
-    <td><?= $row['age']; ?></td>
     <td><?= $row['email']; ?></td>
     <td><?= $row['password']; ?></td>
-    <td>
-        <?php
-            if ($row['gender'] == 1) {
-                echo "Laki-laki";
-            } else {
-                echo "Perempuan";
-            }
-        ?>
-    </td>
+   
     <td>
         <a href="update.php?_id=<?= $row['_id']; ?>">Edit</a>
         <a href="delete.php?_id=<?= $row['_id']; ?>" onclick="return confirm('Delete?')">Delete</a>
