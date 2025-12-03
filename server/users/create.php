@@ -23,7 +23,6 @@ if (isset($_POST['submit'])) {
     Name: <input type="text" name="name"><br>
     Email: <input type="email" name="email"><br>
     Password: <input type="text" name="password"><br>
-   <br>
     <button type="submit" name="submit">Save</button>
     <button><a href="read.php">Kembali</a></button>
 </form>
