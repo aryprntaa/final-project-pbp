@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand" href="#" data-aos="fade-right">
-                <i class="fas fa-apple-alt"></i> FET
+                <i></i> FET
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -63,9 +63,9 @@
                             <a href="register.html" class="btn btn-primary btn-lg btn-hero">
                                 <i class="fas fa-rocket"></i> Get Started Free
                             </a>
-                            <a href="#how-it-works" class="btn btn-outline-light btn-lg btn-hero">
-                                <i class="fas fa-play-circle"></i> See How It Works
-                            </a>
+                            <button onclick="activateGuestMode()" class="btn btn-outline-light btn-lg btn-hero">
+                            <i class="fas fa-user"></i> Try as Guest
+                        </button>
                         </div>
                         <div class="hero-stats">
                             <div class="stat-item">
@@ -285,7 +285,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <h5 class="footer-brand"><i class="fas fa-apple-alt"></i> FET</h5>
+                    <h5 class="footer-brand"><i></i> FET</h5>
                     <p class="footer-text">Stop Food Waste, Start Smart Living</p>
                     <div class="footer-social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -299,7 +299,6 @@
                     <ul class="footer-links">
                         <li><a href="#features">Features</a></li>
                         <li><a href="#how-it-works">How It Works</a></li>
-                        <li><a href="#">Pricing</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
@@ -307,7 +306,6 @@
                     <ul class="footer-links">
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
@@ -327,7 +325,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 FET - Food Expiry Tracker. All rights reserved. | Made with <i class="fas fa-heart"></i> by Kelompok 5</p>
+                <p>&copy; 2025 FET - Food Expiry Tracker.</p>
             </div>
         </div>
     </footer>
@@ -343,7 +341,8 @@
     <!-- AOS Animation JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
-    <!-- Custom JS -->
+   <script src="js/utils.js"></script>
+    <script src="js/guest-mode.js"></script>
     <script src="js/landing.js"></script>
 </body>
 </html>
