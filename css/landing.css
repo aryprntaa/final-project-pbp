@@ -4,25 +4,22 @@
    ========================================== */
 
 /* === ROOT VARIABLES === */
-/* === ROOT VARIABLES === */
-/* === ROOT VARIABLES === */
 :root {
-    /* Color Palette - Updated based on your plan */
-    --primary-green: #666d3c;
+    /* Color Palette based on your concept */
+    --primary-green: #10b981;
     --primary-yellow: #fbbf24;
     --primary-red: #ef4444;
-    --dark-bg: #29311c;
-    --dark-secondary: #666d3c;
-    --light-bg: #f6f4e3;
-    --text-dark: #29311c;
-    --text-light: #666d3c;
+    --dark-bg: #0f172a;
+    --dark-secondary: #1e293b;
+    --light-bg: #f8fafc;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
     --white: #ffffff;
-    --terracotta: #aa4310;
     
     /* Gradient Colors */
-    --gradient-primary: linear-gradient(135deg, #aa4310 0%, #666d3c 100%);
-    --gradient-hero: linear-gradient(135deg, #29311c 0%, #aa4310 100%);
-
+    --gradient-primary: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    
     /* Spacing */
     --section-padding: 100px 0;
     
@@ -862,12 +859,5 @@ html {
     
     .section-title {
         font-size: 28px;
-    }
-}
-
-@media (max-width: 768px) {
-    .footer .row {
-        grid-template-columns: repeat(2, 1fr);
-        text-align: left;
     }
 }
